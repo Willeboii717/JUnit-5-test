@@ -1,10 +1,9 @@
 import java.util.stream.DoubleStream;
 
     public class Calculator {
-
-        static double add(double... operands) {
-            return DoubleStream.of(operands)
-                    .sum();
+        public double addition(double a, double b) {
+            double sum = a + b;
+            return sum;
         }
 
         static double multiply(double... operands) {
