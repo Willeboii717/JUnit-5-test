@@ -6,8 +6,19 @@ import java.util.stream.DoubleStream;
             return sum;
         }
 
-        static double multiply(double... operands) {
-            return DoubleStream.of(operands)
-                    .reduce(1, (a, b) -> a * b);
+        public double multiplication(double a, double b) {
+            double product = a * b;
+            return product;
         }
+
+        public double subtraction(double a, double b) {
+            double diff = a - b;
+            return diff;
+        }
+
+        public double division(double dividend, double divisor) {
+            double quotient = dividend/divisor;
+            return quotient;
+        }
+
     }
